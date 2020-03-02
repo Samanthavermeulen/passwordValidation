@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PasswordValidator</title>
+    <script src="password.js"></script>
+  </head>
+  <body>
+    <h1>PasswordValidator</h1>
+    <p>Rules:</p>
+    <ul>
+      <li>Must be at least 8 Characters</li>
+      <li>Password cannot contain spaces</li>
+      <li>cannot contain the username is the password</li>
+    </ul>
+    <form method="post" id="myform">
+      <input type="text" name="username" id="username" />
+      <input type="password" name="password" id="password" />
+      <input
+        type="button"
+        onclick="passwordValidator(username, password)"
+        value="button"
+      />
+    </form>
+    <p id="result"></p>
+  </body>
+</html>
